@@ -1,0 +1,286 @@
+﻿<Window x:Class="BarberShopSopha.AddEmpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BarberShopSopha"
+        mc:Ignorable="d"
+        Title="AddEmpWindow" Height="450" Width="380"
+        AllowsTransparency="True" Background="Transparent"
+        WindowStyle="None" ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+
+                <Border CornerRadius="10" Grid.ColumnSpan="2"
+                        Grid.RowSpan="12">
+                    <Border.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="Bisque" Offset="0.0"/>
+                            <GradientStop Color="#7be" Offset="1"/>
+
+
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <TextBlock x:Name="tbTitle"
+                        Text="Добавить сотрудника"
+                           FontWeight="Light"
+                           FontFamily="helvetica"
+                           FontSize="25"
+                           Foreground="Navy"
+                           HorizontalAlignment="Center"/>
+                </Border>
+
+
+                <TextBlock
+                           Text="Фамилия"
+                           FontSize="15"
+                           Grid.Row="1"
+                           FontFamily="Bodoni MT"
+                           FontWeight="Bold"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Right"
+                           Opacity="0.8"/>
+
+                <TextBlock 
+                           Text="Имя"
+                           FontSize="15"
+                           Grid.Row="2"
+                           FontFamily="Bodoni MT"
+                           FontWeight="Bold"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Right"
+                           Opacity="0.8"/>
+
+                <TextBlock 
+                           Text="Отчество"
+                           FontSize="15"
+                           Grid.Row="3"
+                           FontFamily="Bodoni MT"
+                           FontWeight="Bold"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Right"
+                           Opacity="0.8"/>
+
+                <TextBlock 
+                           Text="E-mail"
+                           FontSize="15"
+                           Grid.Row="4"
+                           FontFamily="Bodoni MT"
+                           FontWeight="Bold"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Right"
+                           Opacity="0.8"/>
+
+                <TextBlock 
+                           Text="Специализация"
+                           FontSize="15"
+                           Grid.Row="5"
+                           FontFamily="Bodoni MT"
+                           FontWeight="Bold"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Right"
+                           Opacity="0.8"/>
+
+                <TextBlock 
+                           Text="Логин"
+                           FontSize="15"
+                           Grid.Row="8"
+                           FontFamily="Bodoni MT"
+                           FontWeight="Bold"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Right"
+                           Opacity="0.8"/>
+                <TextBlock 
+                           Text="Серия паспорта"
+                           FontSize="15"
+                           Grid.Row="6"
+                           FontFamily="Bodoni MT"
+                           FontWeight="Bold"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Right"
+                           Opacity="0.8"/>
+
+                <TextBlock 
+                           Text="Номер паспорта"
+                           FontSize="15"
+                           Grid.Row="7"
+                           FontFamily="Bodoni MT"
+                           FontWeight="Bold"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Right"
+                           Opacity="0.8"/>
+
+                <TextBlock 
+                           Text="Пароль"
+                           FontSize="15"
+                           Grid.Row="9"
+                           FontFamily="Bodoni MT"
+                           FontWeight="Bold"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Right"
+                           Opacity="0.8"/>
+
+                <TextBlock 
+                           Text="Повтор пароля"
+                           FontSize="15"
+                           Grid.Row="10"
+                           FontFamily="Bodoni MT"
+                           FontWeight="Bold"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Right"
+                           Opacity="0.8"/>
+
+                <TextBox x:Name="txtLName"
+                         Grid.Row="1"
+                         Grid.Column="2"
+                         Width="150"
+                         Height="25"
+                         HorizontalAlignment="Left"
+                         Margin="10 0 0 0"
+                         FontSize="15" TextChanged="txtLName_TextChanged"
+                         />
+
+                <TextBox x:Name="txtFName"
+                         Grid.Row="2"
+                         Grid.Column="2"
+                         Width="150"
+                         Height="25"
+                         HorizontalAlignment="Left"
+                         Margin="10 0 0 0"
+                         FontSize="15" TextChanged="txtFName_TextChanged"/>
+
+                <TextBox x:Name="txtMName"
+                         Grid.Row="3"
+                         Grid.Column="2"
+                         Width="150"
+                         Height="25"
+                         HorizontalAlignment="Left"
+                         Margin="10 0 0 0"
+                         FontSize="15"/>
+
+
+
+                <TextBox x:Name="txtEmail"
+                         Grid.Row="4"
+                         Grid.Column="2"
+                         Width="150"
+                         Height="25"
+                         HorizontalAlignment="Left"
+                         Margin="10 0 0 0"
+                         FontSize="15" 
+                         TextChanged="txtEmail_TextChanged"/>
+
+                <ComboBox x:Name="cmbSpisial"
+                         Grid.Row="5"
+                         Grid.Column="2"
+                         Width="150"
+                         Height="25"
+                         HorizontalAlignment="Left"
+                         Margin="10 0 0 0"
+                         FontSize="15"/>
+
+                <TextBox x:Name="txtLogin"
+                         Grid.Row="8"
+                         Grid.Column="2"
+                         Width="150"
+                         Height="25"
+                         HorizontalAlignment="Left"
+                         Margin="10 0 0 0"
+                         FontSize="15"/>
+
+                <TextBox x:Name="txtSeries"
+                         Grid.Row="6"
+                         Grid.Column="2"
+                         Width="150"
+                         Height="25"
+                         HorizontalAlignment="Left"
+                         Margin="10 0 0 0"
+                         FontSize="15" 
+                         MaxLength="5"
+                         TextChanged="txtSeries_TextChanged"/>
+
+
+                <TextBox x:Name="txtNumber"
+                         Grid.Row="7"
+                         Grid.Column="2"
+                         Width="150"
+                         Height="25"
+                         HorizontalAlignment="Left"
+                         Margin="10 0 0 0"
+                         FontSize="15" 
+                         MaxLength="7"
+                         TextChanged="txtNumber_TextChanged"/>
+
+                <TextBox x:Name="txtPassword"
+                         Grid.Row="9"
+                         Grid.Column="2"
+                         Width="150"
+                         Height="25"
+                         HorizontalAlignment="Left"
+                         Margin="10 0 0 0"
+                         FontSize="15"/>
+
+                <TextBox x:Name="txtRepeatPassword"
+                         Grid.Row="10"
+                         Grid.Column="2"
+                         Width="150"
+                         Height="25"
+                         HorizontalAlignment="Left"
+                         Margin="10 0 0 0"
+                         FontSize="15"
+                         />
+
+                <Button x:Name="btnAddEmpl"
+                        Grid.Row="11"
+                        Width="100"
+                        Height="30"
+                        Content="Добавить"
+                        FontSize="15"
+                        HorizontalAlignment="Center"
+                        Margin="50 0 0 0"
+                        Click="btnAddEmpl_Click"/>
+
+                <Button x:Name="btnEmpBack"
+                        Grid.Column="1"
+                        Grid.Row="11"
+                        HorizontalAlignment="Center"
+                        Grid.ColumnSpan="2"
+                        Width="100"
+                        Height="30"
+                        Content="Назад"
+                        Margin="0 0 50 0"
+                        FontSize="15"
+                        Click="btnEmpBack_Click"/>
+
+
+
+
+
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
+
+
