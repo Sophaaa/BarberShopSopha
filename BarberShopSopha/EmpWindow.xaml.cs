@@ -97,6 +97,9 @@ namespace BarberShopSopha
 
         private void btnEmplBack2_Click(object sender, RoutedEventArgs e)
         {
+            this.Hide();
+            AuthWindow authWindow = new AuthWindow();
+            authWindow.ShowDialog();
             this.Close();
         }
 

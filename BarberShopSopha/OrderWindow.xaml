@@ -37,6 +37,68 @@
                            HorizontalAlignment="Center"/>
             </StackPanel>
 
+
+            <DataGrid x:Name="AllOrder"
+                      Grid.Row="1"
+                      AutoGenerateColumns="False">
+
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Сотрудник" Width="*" Binding="{Binding Emp}"/>
+                    <DataGridTextColumn Header="Клиент" Width="*" Binding="{Binding Client}"/>
+                    <DataGridTextColumn Header="Услуга" Width="*" Binding="{Binding Service}"/>
+                    <DataGridTextColumn Header="Начало работы" Width="*" Binding="{Binding StartTime}"/>
+                    <DataGridTextColumn Header="Конец работы" Width="*" Binding="{Binding EndTime}"/>
+                </DataGrid.Columns>
+
+            </DataGrid>
+
+
+
+            <Button x:Name="btnClient2"
+                        Grid.Row="2"
+                        HorizontalAlignment="Center"
+                        Width="100"
+                        Height="30"
+                        Content="Добавить"
+                        Margin="0 0 150 0"
+                        FontSize="15"
+                    Click="btnClient2_Click"/>
+
+
+            <Button x:Name="btncBack"
+                        HorizontalAlignment="Center"
+                        Grid.Row="2"
+                        Width="100"
+                        Height="30"
+                        Margin="150 0 0 0"
+                        Content="Назад"
+                        FontSize="15"
+                    Click="btncBack_Click"/>
+
+            <TextBox
+                x:Name="txtSearch2"
+                FontSize="15"
+                Width="100"
+                Height="20"
+                Background="{x:Null}"
+                Foreground="Black"
+                BorderBrush="White"
+                FontFamily="Rockwell Condensed"
+                HorizontalAlignment="Left"
+                Margin="10 80 0 10" />
+
+            <ComboBox
+                x:Name="cmbSort2"
+                FontSize="10"
+                Width="100"
+                Height="20"
+                Background="{x:Null}"
+                Foreground="Black"
+                BorderBrush="White"
+                FontFamily="Rockwell Condensed"
+                HorizontalAlignment="Center"
+                Margin="50 80 100 10" />
         </Grid>
     </Grid>
+  
 </Window>
